@@ -1,14 +1,23 @@
 import Head from 'next/head'
- import styles from '../styles/Home.module.css'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="bg-[#021340] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Head>
         <title>Karthikeya's Portfolio</title>
       </Head>
 
-      <h1 className="text-3xl font-bold underline">Let's build </h1>
+      {/* Header */}
+      <Header />
+ 
+      {/* Hero */}
+      <section id='hero' className='snap-center'>
+        <Hero />
+      </section>
+
     </div>
   )
 }
