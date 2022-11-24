@@ -26,9 +26,9 @@ export default function Projects({ }: Props) {
                 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7f019]/60 scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-[#f7f019]/80'>
                 {/* Each projects */}
                 {
-                    projects.map((project, i) => {
+                    projects.map((project: any, i: number) => {
                         return (
-                            <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y5 items-center justify-center p-20 md:p-44 h-screen'>
+                            <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y5 items-center justify-center p-20 md:p-44 h-screen' key={i}>
                                 <motion.img
                                     initial={{
                                         y: -300,

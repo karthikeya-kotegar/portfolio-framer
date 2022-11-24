@@ -19,7 +19,7 @@ export default function ContactMe({ }: Props) {
     const { register, handleSubmit } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = formData => {
         console.log(formData)
-        window.location.href = `mailto:karthikeyakotegar@gmail.com?subject=${formData.subject}&body=Hi, My name is ${formData.name}. ${formData.message}. [${formData.email}]`
+        // window.location.href = `mailto:karthikeyakotegar@gmail.com?subject=${formData.subject}&body=Hi, My name is ${formData.name}. ${formData.message}. [${formData.email}]`
          
     }
     return (
