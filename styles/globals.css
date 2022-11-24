@@ -7,4 +7,7 @@
         @apply px-4 py-2 mr-2 border border-[#424242] rounded-full uppercase text-xs tracking-widest text-gray-400 transition-all hover:border-b-[white]/40 hover:text-gray-200
     }
 
+    .contactInput {
+        @apply outline-none bg-slate-100/10 rounded-sm border-b px-4 py-4 border-[#f7f019]/30 text-gray-300 placeholder-gray-500 transition-all focus:border-[#ede24c] focus:text-white hover:border-[#ede24c]/60
+    }
 }
