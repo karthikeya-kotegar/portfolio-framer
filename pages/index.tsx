@@ -10,7 +10,8 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className="bg-[#021340] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0">
+    <div className="bg-[#021340] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
+      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7f019]/80 scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-[#f7f019]">
       <Head>
         <title>Karthikeya's Portfolio</title>
       </Head>

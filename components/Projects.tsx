@@ -22,7 +22,8 @@ export default function Projects({ }: Props) {
                 Projects
             </h3>
 
-            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
+                scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7f019]/60 scrollbar-thumb-rounded-full scrollbar-track-rounded-full hover:scrollbar-thumb-[#f7f019]/80'>
                 {/* Each projects */}
                 {
                     projects.map((project, i) => {
@@ -61,7 +62,7 @@ export default function Projects({ }: Props) {
                 }
             </div>
 
-            <div className='w-full absolute top-[30%] bg-[#03070f]/10 left-0 h-[500px] -skew-y-12 border border-[#bfb308]/20'>
+            <div className='w-full absolute top-[30%] bg-[#f7f019]/20 left-0 h-[500px] -skew-y-12 border border-[#bfb308]/20'>
 
             </div>
         </motion.div>

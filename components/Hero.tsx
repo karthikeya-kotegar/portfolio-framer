@@ -16,7 +16,7 @@ export default function Hero({ }: Props) {
         <div className='h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircle />
             <img
-                className='relative rounded-full h-80 w-80 mx-auto object-cover md:w-96 md:h-96'
+                className='relative rounded-full h-96 w-96 mx-auto object-cover md:w-[500px] md:h-[500px]'
                 src="Developer-activity-bro.png"
                 alt='karthikeya'
             />
