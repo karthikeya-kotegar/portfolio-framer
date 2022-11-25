@@ -26,31 +26,27 @@ export default function Header({ socials }: Props) {
                 }}
                 className='flex flex-row items-center'>
 
+                {/* Social Icons */}
+
                 {socials.map((social) => {
                     console.log("socialsocial", social);
-                    <SocialIcon
-                        key={social._id}
-                        url="https://youtube.com/"
-                        fgColor='gray'
-                        bgColor='transparent'
-                    />
+                    return (
+                        <SocialIcon
+                            key={social._id}
+                            url={social.url}
+                            fgColor='gray'
+                            bgColor='transparent'
+                        />
+                    )
 
                 })}
 
-                {/* Social Icons */}
-                <SocialIcon url="https://youtube.com/"
+                {/* <SocialIcon url="https://youtube.com/"
                     fgColor='gray'
                     bgColor='transparent'
-                />
+                /> */}
 
-                <SocialIcon url="https://youtube.com/"
-                    fgColor='gray'
-                    bgColor='transparent'
-                />
-                <SocialIcon url="https://youtube.com/"
-                    fgColor='gray'
-                    bgColor='transparent'
-                />
+
             </motion.div>
 
             <Link href='#contact'>

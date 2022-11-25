@@ -1,9 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { PageInfo } from '../typings'
+import { urlFor } from '../sanity'
 
-type Props = {}
+type Props = {
+  pageInfo: PageInfo
+}
 
-export default function About({ }: Props) {
+export default function About({ pageInfo }: Props) {
   return (
     <motion.div
       initial={{
@@ -36,6 +40,7 @@ export default function About({ }: Props) {
         //   once:true //animate only once
         // }}
         src='about-removebg.png'
+        // src={urlFor(pageInfo?.profilePic).url()}
         alt='Software developer'
         className='mb-20 md:mb-0 flex-shrink-0 w-80 h-80 rounded-full object-cover md:rounded-lg md:w-96 md:h-96'
       />
@@ -43,8 +48,7 @@ export default function About({ }: Props) {
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>Here is a <span className='underline decoration-[#f7f019]/90'>little</span> background</h4>
         <p className='text-base'>
-          simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+          {pageInfo.backgroundInformation}
         </p>
       </div>
 
