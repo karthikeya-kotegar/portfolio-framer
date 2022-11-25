@@ -7,7 +7,7 @@ export const fetchSkills = async () => {
 
    const skills: Skill = data.skills;
 
-   console.log("Skills: ", skills);
+//    console.log("Skills: ", skills);
 
    return skills;
 }
